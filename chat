@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XINFINITE | Secure Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="custom-bg" class="bg-layer"></div>
+
+    <div id="auth-overlay" class="auth-gate">
+        <div class="auth-card">
+            <h2 class="auth-title">XINFINITE</h2>
+            <p class="auth-subtitle">IDENTITY VERIFICATION REQUIRED</p>
+            <div class="input-group">
+                <input type="text" id="name-entry" placeholder="IDENT_USER..." autocomplete="off">
+            </div>
+            <button id="enter-btn">ACCESS CHANNEL</button>
+            <p id="error-msg" class="error-text">ACCESS_DENIED: UNAUTHORIZED_USER</p>
+        </div>
+    </div>
+
+    <div id="loader-overlay" class="loader-gate" style="display: none;">
+        <div class="terminal-box">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">XINFINITE_v1.0.4_BOOT_ROM</span>
+            </div>
+            <div id="terminal-content" class="terminal-body">
+                </div>
+        </div>
+    </div>
+
+    <div id="app-interface" class="app-container" style="visibility: hidden;">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-box">X</div>
+                <div class="brand-text">
+                    <span class="main-name">XINFINITE</span>
+                    <span class="ver">SECURE_NODE</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-content">
+                <p class="sidebar-label">ACTIVE_CHANNELS</p>
+                <div class="channel active"><span>#</span> global-chat</div>
+                <div class="channel"><span>#</span> dev-logs</div>
+                <div class="channel"><span>#</span> encrypted-null</div>
+            </div>
+
+            <div class="user-strip">
+                <div class="user-avatar" id="u-avatar">?</div>
+                <div class="user-details">
+                    <p id="u-name">---</p>
+                    <p class="u-status">CONNECTED</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-main">
+            <header class="chat-header">
+                <div class="header-info">
+                    <span class="status-indicator"></span>
+                    <h3># global-chat</h3>
+                </div>
+            </header>
+
+            <div class="message-wall" id="msg-container">
+                </div>
+
+            <form id="chat-form" class="chat-input-row">
+                <div class="input-box">
+                    <input type="text" id="msg-input" placeholder="Transmit data..." autocomplete="off">
+                    <button type="submit" id="send-btn">SEND</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
