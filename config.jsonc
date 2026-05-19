@@ -405,8 +405,18 @@
             "aliases": ["Fireboy and Watergirl 4"],
             "categories": []
         },
+        "Five Nights at Epsteins": {
+            "path": "fnae",
+            "aliases": [],
+            "categories": []
+        },
         "Flash Chess": {
             "path": "flash/?game=flash-chess",
+            "aliases": [],
+            "categories": []
+        },
+        "Fluid Sim": {
+            "path": "fluid-sim",
             "aliases": [],
             "categories": []
         },
@@ -801,6 +811,11 @@
             "aliases": [],
             "categories": []
         },
+        "Slope 2": {
+            "path": "slope2",
+            "aliases": [],
+            "categories": []
+        },
         "Smash Karts": {
             "path": "smash-karts",
             "aliases": [],
@@ -918,6 +933,11 @@
         },
         "Swords and Souls": {
             "path": "flash/?game=swords-and-souls",
+            "aliases": [],
+            "categories": []
+        },
+        "TerbiumOS": {
+            "path": "terbium",
             "aliases": [],
             "categories": []
         },
@@ -1052,7 +1072,7 @@
     },
     "config": {
         "proxy": true, // proxy only works when self-hosted
-        "proxyPath": "https://nana.rammer.govt.hu/" // absolute or relative path to proxy; proxy must be set to true for this setting to have any effect.
+        "proxyPath": "https://fake.bayworld.net/" // absolute or relative path to proxy; proxy must be set to true for this setting to have any effect.
         // if you are using VioletGG2, all you need to do set proxy to "/proxy.html"
     }
 }

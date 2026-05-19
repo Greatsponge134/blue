@@ -7,6 +7,7 @@ try {
     const jsoncToJson = jsoncContent.replace(/\\"|"(?:\\"|[^"])*"|(\/\/.*|\/\*[\s\S]*?\*\/)/g, (m, g) => (g ? '' : m));
     const minifiedJson = JSON.stringify(JSON.parse(jsoncToJson));
     writeFileSync(resolve(import.meta.dirname, 'js/config.js'), `var json=${minifiedJson}`, 'utf-8');
+    console.log("Build successful!");
 } catch (e) {
     console.error(e);
     process.exit(1);

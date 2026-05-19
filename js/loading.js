@@ -2,7 +2,7 @@ function changeLoadingTip() {
     const tips = [
         'Ur gay frfr',
         'Read a book idiot',
-        'I HATE THIS FRICKEN SCHOOL',
+        'FUCK YOU',
         "pls kys",
         'wait for it load',
         'wait holy',
